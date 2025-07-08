@@ -5,11 +5,18 @@
 
 class PaperBook : virtual public Book{
 public:
-	PaperBook(std::string isbn_, std::string title_, int pubYear_, int price_):Book(isbn_, title_, pubYear_, price_){}
+	PaperBook(std::string isbn_, std::string title_, int pubYear_, int price_, int stock_):Book(isbn_, title_, pubYear_, price_), stock(stock_){}
 	std::string getType(){
 		return "paper";
 	}
+	int getStock(){
+		return stock;
+	}
+	void changeStock(int quantity){
+		stock += quantity;
+	}
 private:
+	int stock;
 };
 
 #endif
