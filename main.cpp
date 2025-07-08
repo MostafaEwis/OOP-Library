@@ -28,5 +28,7 @@ int main(int argc, char** argv){
 	lib.buyBook("145", 3, "kafr thanks", "mostafa@dev.com");
 	//ebook buy example
 	lib.buyBook("153", 3, "kafr thanks", "mostafa@dev.com");
+	//can't buy demo book
+	lib.buyBook("133", 3, "kafr thanks", "mostafa@dev.com");
 	return 0;
 }
